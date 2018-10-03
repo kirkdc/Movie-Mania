@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url("https://image.ibb.co/bY4tQ9/Poster_BG_WEB.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+p{
+    text-align: center;
+    color: #e3ccad;
+    font-size: 50px;
+    background-color: rgba(51, 44, 44, 0.86);
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+    padding: 2em;
+    margin-top: 13em;
+    background: rgba(0, 0, 0, 0.66);
+}
+
+.box-text{
+    margin-bottom: 1em;
+}
+
+.submit{
+    margin-top: 1em;
+}

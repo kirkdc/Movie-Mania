@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> The Movie Database </title>
+        <link rel="stylesheet" href="/search.css"> <!--Typing in the correct path is very imortant. The "/" makes sure express does not look in the same directory -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    
+    <body>
+
+<p> THE MOVIE DATABASE</p>
+
+    <div class="container">
+        <h2 class="box-text"> LOOK FOR A MOVIE </h2>
+
+        <form action="/results" method="GET">
+            <!-- the connection to the page /results and the type of request it is -->
+            <input type="text" placeholder="Movie Name..." name="search">
+            <!-- the name="" is IMPORTANT because whatever the user enters will be put into search(the key value pair in the query string...in the search bar will change to reflect this) -->
+            <div class="submit"> <input type="submit"></div>
+    
+</form>
+
+    </body>
+</html>

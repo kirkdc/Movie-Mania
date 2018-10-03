@@ -1,0 +1,51 @@
+html { 
+    height: 100%;
+
+}
+
+body {
+    background-image:  url("https://image.ibb.co/cEt3Ee/Poster_BG_WEB_pg_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: .1fr 2fr 1fr;
+    color: white;
+    grid-gap: 20px;
+     
+}
+
+.innerCont{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-self: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+img{
+    max-width: 90%;
+    height: auto;
+    padding: 5px;
+    background:rgba(180, 172, 145, 0.89);
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.toCenter{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
