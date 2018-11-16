@@ -31,7 +31,11 @@
             
             <div class="rating toCenter">
                 <ul>
-                    <li>IMDB: <%= movieData["Ratings"][0]["Value"] %> </li><br>
+                    
+                    <li>IMDB: <%= movieData["Ratings"][0] ? movieData["Ratings"][0]["Value"] : "N/A" %>  </li> <br> 
+                    <!--^added in the ternary operator to fix error^-->
+                      
+                    
                     <li>META: <%= movieData["Metascore"] %></li><br>
                 
                 </ul>
