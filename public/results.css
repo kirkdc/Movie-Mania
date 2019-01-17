@@ -13,7 +13,7 @@ body {
 
 
 
-.container{
+.container-result{
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     color: white;
@@ -22,21 +22,21 @@ body {
     padding-bottom: 30px;
 }
 
-.title{
+.title-result{
     grid-gap: 50px;
     padding-top: 30px;
     
 }
 
-.button{
+.button-result{
     padding-top: 30px;
 }
 
-.image{
+.image-result{
     align-content: flex-end;
 }
 
-img {
+.img-result {
     border-radius: 8px;
     padding: 10px;
     background-color: black;
@@ -46,18 +46,23 @@ img {
     margin-left: 30%;
 }
 
-h2{
-    color: antiquewhite !important;
+.heading2{
+    color: #7bffb3;
+    padding: 20px;
+    padding-bottom: 20px;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 400;
 }
 
 
-h3{
-    color: antiquewhite !important;
+.heading3{
+    color: white;
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 400;
 }
 
 
 .searchAgain{
-    margin-left: 22%;
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -66,4 +71,10 @@ h3{
 .btn {
     background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05));
     background-repeat: repeat-x;
+}
+
+.toCenter{
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }

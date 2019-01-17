@@ -11,16 +11,16 @@ body {
     background-size: cover;
 }
 
-h1{
+.title-det{
     text-transform: uppercase;
 }
 
-.container{
+.container-det{
     display: grid;
     grid-template-rows: .1fr 2fr 1fr;
     color: white;
     grid-gap: 20px;
-     
+       
 }
 
 .innerCont{
@@ -31,7 +31,7 @@ h1{
     grid-gap: 10px;
 }
 
-img{
+.img-det{
     max-width: 90%;
     height: auto;
     padding: 5px;

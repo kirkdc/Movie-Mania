@@ -1,42 +1,34 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Movie List </title>
-        <link rel="stylesheet" href="/details.css"> <!--Typing in the correct path is very imortant. The "/" makes sure express does not look in the same directory -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-    </head>
+<% include ./partials/header %>
     
-    <body>
+    <body class="det-bod">
         
-        <div class="container">
-        <div class="title toCenter"> <h1> <%= movieData["Title"] %> </h1></div>
+        <div class="container-det">
+        <div class="title-det toCenter"> <h1> <%= movieData["Title"] %> </h1></div>
         
         
         <div class="innerCont">
             
             <div class="genre toCenter">
                 <ul>
-                    <li>Genre: <%= movieData["Genre"] %> </li><br>
-                    <li>Rating: <%= movieData["Rated"] %> </li><br>
-                    <li>Runtime: <%= movieData["Runtime"] %> </li><br>
-                    <li>Year: <%= movieData["Year"] %> </li><br>
-                    <li>Language: <%= movieData["Language"] %> </li><br>
+                    <li><strong>Genre:</strong> <%= movieData["Genre"] %> </li><br>
+                    <li><strong>Rating:</strong> <%= movieData["Rated"] %> </li><br>
+                    <li><strong>Runtime:</strong> <%= movieData["Runtime"] %> </li><br>
+                    <li><strong>Year:</strong> <%= movieData["Year"] %> </li><br>
+                    <li><strong>Language:</strong> <%= movieData["Language"] %> </li><br>
                 </ul>
             </div>
           
-            <div class="image toCenter"> <img src="<%=movieData["Poster"]%>" onerror="this.src='http://vollrath.com/ClientCss/images/VollrathImages/No_Image_Available.jpg'" alt="" width="500" height="500">
+            <div class="image toCenter"> <img class="img-det" src="<%=movieData["Poster"]%>" onerror="this.src='http://vollrath.com/ClientCss/images/VollrathImages/No_Image_Available.jpg'" alt="" width="500" height="500">
             </div>
             
             <div class="rating toCenter">
                 <ul>
                     
-                    <li>IMDB: <%= movieData["Ratings"][0] ? movieData["Ratings"][0]["Value"] : "N/A" %>  </li> <br> 
+                    <li><strong>IMDB:</strong> <%= movieData["Ratings"][0] ? movieData["Ratings"][0]["Value"] : "N/A" %>  </li> <br> 
                     <!--^added in the ternary operator to fix error^-->
                       
                     
-                    <li>META: <%= movieData["Metascore"] %></li><br>
+                        <li><strong>META:</strong> <%= movieData["Metascore"] %></li><br>
                 
                 </ul>
             </div>
@@ -51,4 +43,5 @@
         
         
  </body>
-</html>
+ 
+<% include ./partials/footer %>
