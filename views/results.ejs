@@ -11,13 +11,27 @@
 
         <div class="title-result"> <strong><%= movie["Title"] %></strong> - <%= movie["Year"] %>
 
-            <div class="type"> <% if (movie["Type"] == "movie") { %>
+        <div class="type"> 
+            <% if (movie["Type"] == "movie") { %>
+              
                <i class="fa fa-film" aria-hidden="true"> Movie </i>
                 
-            <% } else { %>
-            <i class="fa fa-television" aria-hidden="true"> Series </i>
-            <% }; %>
+            <% } else if (movie["Type"] == "series") { %>
             
+            <i class="fas fa-tv"> Series </i> 
+            
+            <% } else if (movie["Type"] == "game") { %>
+            
+            <i class="fas fa-gamepad"> Game </i>
+            
+            
+            
+            
+            <% } else { %>
+            
+            <i class="" aria-hidden="true"> ¯\_(ツ)_/¯ </i>
+            
+            <% }; %>
         </div>
 
         </div>
